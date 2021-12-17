@@ -20,7 +20,7 @@ def input_number(number,equation) :
     expression = expression + str(number)
     equation.set(expression)
     
-def clear(equation) :
+def clear_exp(equation) :
     global expression
     expression = " "
     equation.set("Enter the expression :")
@@ -82,7 +82,7 @@ def win() :
  div.place(x=200,y=265)
  eq = tkt.Button(window,text='=',fg='white',bg='black',bd=3,padx=15,pady=15,command = lambda : evaluate(equation))
  eq.place(x=150,y=265)
- clear = tkt.Button(window,text='Clear',fg='white',bg='black',bd=2,padx=15,pady=15,command = lambda : clear(equation))
+ clear = tkt.Button(window,text='Clear',fg='white',bg='black',bd=2,padx=15,pady=15,command = lambda : clear_exp(equation))
  clear.place(x=120,y=320)
  
 
